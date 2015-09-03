@@ -1,0 +1,66 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Andrew Fillmore}
+\title{Modern ALgebra 4}
+\begin{document}
+\section*{4}
+\subsection*{a}
+$$ax^3+bx^2+cx+d=0$$
+Let $x=y+h$. Then
+$$a(y+h)^3+b(y+h)^2+c(y+h)+d=0$$
+$$\Rightarrow a(y^3+3y^2h+3yh^2+h^3)+b(y^2+2yh+h^2)+c(y+h)+d=0$$
+$$\Rightarrow ay^3+3ay^2h+3ayh^2+ah^3+by^2+2byh+bh^2+cy+ch+d=0$$
+$$\Rightarrow ay^3+(3ah+b)y^2+(3ah^2+2bh+c)y+ah^3+bh^2+ch+d=0$$
+To get to the depressed cubic Let $3ah+b=0$. Therefore
+$$h=-\frac{b}{3a}$$
+Then
+$$ay^3+\left(3a\frac{-b}{3a}+b\right)y^2+\left(3a\left(\frac{-b}{3a}\right)^2+2b\frac{-b}{3a}+c\right)y+a\left(\frac{-b}{3a}\right)^3+b\left(\frac{-b}{3a}\right)^2+c\frac{-b}{3a}+d=0
+$$
+$$\Rightarrow ay^3 +\left(\frac{b^2}{3a}-\frac{2b^2}{3a}+c\right)y-\frac{b^3}{27a^2}+\frac{b^3}{9a^2}-\frac{bc}{3a}+d=0$$
+$$\Rightarrow y^3+\left(\frac{\frac{b^2}{3a}-\frac{2b^2}{3a}+c}{a}\right)y+\frac{\frac{b^3}{9a^2}-\frac{b^3}{27a^2}-\frac{bc}{3a}+d}{a}=0$$
+$$\Rightarrow y^3+\left(\frac{c}{a}-\frac{b^2}{3a^2}\right)y+\frac{2b^3}{27a^3}-\frac{bc}{3a^2}+\frac{d}{a}=0$$
+\subsection*{b}
+The solution for the depressed cubic $y^3+cy+d=0$ is
+$$u+v$$
+Where
+$$u=\sqrt[3]{\left(\frac{-d}{2}\right)-\sqrt{R}}$$
+,
+$$v=\sqrt[3]{\left(\frac{-d}{2}\right)+\sqrt{R}}$$
+and
+$$R=\left(\frac{d}{2}\right)^2+\left(\frac{c}{3}\right)^3$$
+So with the depressed cubic from part a we get
+$$u=\sqrt[3]{-\frac{1}{2}\left(\frac{2b^3}{27a^3}-\frac{bc}{3a^2}+\frac{d}{a}\right)-\sqrt{R}}$$
+$$=\sqrt[3]{\frac{bc}{6a^2}-\frac{b^3}{27a^3}-\frac{d}{2a}-\sqrt{R}}$$
+,
+$$v=\sqrt[3]{-\frac{1}{2}\left(\frac{2b^3}{27a^3}-\frac{bc}{3a^2}+\frac{d}{a}\right)-\sqrt{R}}$$
+$$=\sqrt[3]{\frac{bc}{6a^2}-\frac{b^3}{27a^3}-\frac{d}{2a}+\sqrt{R}}$$
+and
+$$R=\left(\frac{1}{2}\left(\frac{2b^3}{27a^3}-\frac{bc}{3a^2}+\frac{d}{a}\right)\right)^2+\left(\frac{1}{3}\left(\frac{c}{a}-\frac{b^2}{3a^2}\right)\right)^3$$
+$$=\frac{b^3d}{27a^4}-\frac{b^2c^2}{108a^4}-\frac{bcd}{6a^3}+\frac{c^3}{27a^3}+\frac{d^2}{4a^2}$$
+The other two roots will be
+$$\omega u+\omega^2v$$
+and
+$$\omega^u+\omega v$$
+where $\omega$ is the cube root of unity.
+$$\omega=-\frac{1}{2}+\frac{\sqrt{3}i}{2}$$
+Now we replace $x$ back in for $y+h$.
+So because $y=u+v$ now $x-h=u+v$ which leads to $x=h+u+v$.
+Now our roots are
+$$r_1=\frac{-b}{3a}+\sqrt[3]{\frac{bc}{6a^2}-\frac{b^3}{27a^3}-\frac{d}{2a}-\sqrt{R}}+\sqrt[3]{\frac{bc}{6a^2}-\frac{b^3}{27a^3}-\frac{d}{2a}+\sqrt{R}}$$
+$$r_2=\frac{-b}{3a}+\omega\sqrt[3]{\frac{bc}{6a^2}-\frac{b^3}{27a^3}-\frac{d}{2a}-\sqrt{R}}+\omega^2\sqrt[3]{\frac{bc}{6a^2}-\frac{b^3}{27a^3}-\frac{d}{2a}+\sqrt{R}}$$
+$$r_3=\frac{-b}{3a}+\omega^2\sqrt[3]{\frac{bc}{6a^2}-\frac{b^3}{27a^3}-\frac{d}{2a}-\sqrt{R}}+\omega\sqrt[3]{\frac{bc}{6a^2}-\frac{b^3}{27a^3}-\frac{d}{2a}+\sqrt{R}}$$
+\subsection*{c}
+$$x^3-10x^2+31x-28=0$$
+$$a=1,b=-10,c=31,d=-28$$
+$$R=(-10)^3(-28)-(-10)^231^2-(-10)31(-28)+31^3+(-28)^2$$
+$$=-46205$$
+$$u=\sqrt[3]{(-10)31-(-10)^3-\sqrt{-46205}}$$
+$$=\sqrt[3]{690-}$$
+Lard
+\end{document}
